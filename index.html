@@ -8,19 +8,18 @@
     <title>Library</title>
 </head>
 <body>
-    <div class="display-container">
-        
-    </div>
+    <h1>The Library</h1>
     <button id="newBook">NEW BOOK</button>
+    <div class="display-container"></div>
     <!-- The Model source: https://www.w3schools.com/howto/howto_css_modals.asp -->
     <div id="popup" class="popup">
-        <form id="popupForm" action="./scripts.js">
+        <form id="popupForm">
             <span class="close">&times;</span>
             <legend>New Book</legend>
             <div id="textInputs">
-                <p><input type="text" id="title" name="title" placeholder="Title"></p>
-                <p><input type="text" id="author" name="author" placeholder="Author"></p>
-                <p><input type="text" id="pages" name="pages" placeholder="Number of pages"></p>
+                <p><input type="text" id="title" name="title" placeholder="Title" required /></p>
+                <p><input type="text" id="author" name="author" required placeholder="Author" /></p>
+                <p><input type="number" id="pages" name="pages" required placeholder="Number of pages" /></p>
             </div>
             <div id="checkBox">
                 <p>

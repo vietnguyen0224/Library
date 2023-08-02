@@ -2,16 +2,69 @@
     box-sizing: border-box;
 }
 
-body {
+body, 
+.info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
+
+body {
+    background-color: blanchedalmond;
+    color:darkgreen
+}
+
+h1 {
+   color:darkgreen 
+}
+
 .display-container {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 } 
+
+.info {
+    align-items: start;
+}
+
+.readBtn-container {
+    display: grid;
+    text-align: center;
+}
+
+.readBtn-container > label {
+    font-weight: bold;
+}
+
+.book-wrapper,
+#newBook,
+.rmBtn {
+    padding: 10px 15px;
+    border: 2px solid plum;
+    border-radius: 8px;
+}
+
+.book-wrapper {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    background-color: coral;
+    gap: 2rem;
+}
+
+#newBook {
+    margin-top: 1rem;
+    background-color: skyblue;
+}
+
+.rmBtn {
+    padding: 1rem 2rem;
+    background-color: rgb(89, 42, 42);
+    color: whitesmoke;
+}
 
 /* The Modal (background) source: https: //www.w3schools.com/howto/howto_css_modals.asp*/
 .popup {
@@ -33,7 +86,8 @@ body {
     margin: 15% auto;
     /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
+    border: solid 1px plum;
+    border-radius: 8px;
     width: 18em;
 }
 
@@ -52,15 +106,3 @@ body {
     cursor: pointer;
 }
 /* End of popup */
-
-.book-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.book-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
