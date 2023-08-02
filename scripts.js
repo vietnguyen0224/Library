@@ -27,9 +27,9 @@ let books;
 
 class Book {
     constructor(author, title, pages, read) {
-        this.author = author;
-        this.title = title;
-        this.pages = pages + ' pages';
+        this.author = author || 'N/A';
+        this.title = title || 'N/A';
+        this.pages = (pages || 'N/A') + ' pages';
         this.read = read;
     }
 }
