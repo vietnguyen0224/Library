@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="display-container">
+        
+    </div>
+    <button id="newBook">NEW BOOK</button>
+    <!-- The Model source: https://www.w3schools.com/howto/howto_css_modals.asp -->
+    <div id="popup" class="popup">
+        <form id="popupForm" action="./scripts.js">
+            <span class="close">&times;</span>
+            <legend>New Book</legend>
+            <div id="textInputs">
+                <p><input type="text" id="title" name="title" placeholder="Title"></p>
+                <p><input type="text" id="author" name="author" placeholder="Author"></p>
+                <p><input type="text" id="pages" name="pages" placeholder="Number of pages"></p>
+            </div>
+            <div id="checkBox">
+                <p>
+                    <label>Read: </label>
+                    <input type="checkbox" id="read" name="read" value="yes">
+                </p>
+            </div>
+            <button type="submit" form="popupForm" id="addButton">Add</button>
+        </form>
+    </div>
+</body>
+</html>
